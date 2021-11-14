@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.io.*;
 import java.math.*;
 /**
-* COP 3530: Project 1 – Array Searches and Sorts
+* COP 3530: Project 1 ï¿½ Array Searches and Sorts
 * Project1 class facilitates main portion of project, prompts user for csv file, reads file, and then prompts user with options menu which enables user to sort StatesArray or search statesArray for a certain state.
 * @author Ricardo A Carrasco
 * @version 2/5/2021
@@ -174,7 +174,6 @@ public class Project1 {
 	* 5. searches for state
 	* 	-If sorted alphabetically, searches using binary search
 	* 	-if not, sequential search is used
-	* 6. spearmans rho
 	* 7. quit
 	*/
 	public static void main(String[] args){
@@ -202,8 +201,7 @@ public class Project1 {
 			System.out.println("3. Sort by Case Fatality Rate");
 			System.out.println("4. Sort by Median Household Income");
 			System.out.println("5. Find and print a given State");
-			System.out.println("6. Print Spearman’s rho matrix");
-			System.out.println("7. Quit");
+			System.out.println("6. Quit");
 			//Input validation
 			do {
 				tempNum++;
@@ -241,7 +239,7 @@ public class Project1 {
 					break;
 				case 4:
 					insertionSort(StatesArray, 50);
-					System.out.println(userChoice);
+          System.out.println("\nInsertion Sort\n");
 					nameSorted = false;
 					break;
 				case 5:
@@ -260,9 +258,6 @@ public class Project1 {
 					}
 					break;
 				case 6:
-					System.out.println(userChoice);
-					break;
-				case 7:
 					System.out.println("Have a good day!");
 					quit = true;
 					break;
